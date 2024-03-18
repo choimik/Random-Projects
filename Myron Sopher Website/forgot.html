@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div class="container" id ="container">
+        <b><h1 class ="index_neg">Your Password is password</h1></b>
+        <a href="index.html">Return to Login</a>
+        </div>
+        <div class="form" id ="form">
+        <form onsubmit="return checkForm()">
+            <h1 class="forgot_title">Forgot Your Password</h1> <br> <br>
+            <label class="instruction">Please answer all questions in lowercase or with numbers</label> <br> <br>
+
+            <label class="label-style">How old is Philomena Willoby?</label><br>
+            <input class="input-style" type = "text" id="a1" required> <br><br>
+
+            <label class="label-style">What is the number of Philomena's elementary school?</label><br>
+            <input class="input-style" type = "text" id="a2" required> <br><br>
+
+            <label class="label-style">If Gus was 2 times older than Myron and Gus is 10 years older than Myron. How old was Myron at this time?</label><br>
+            <input class="input-style" type = "text" id="a3" required> <br><br>
+
+            <label class="label-style">What is Philomena Willoby's favorite sport?</label><br>
+            <input class="input-style" type = "text" id="a4" required> <br><br>
+
+            <label class="label-style">When Philomena adds 15 apples to her group of apples, the mean is increased by 2. When 1 apple is added to the newly added group of apples, the mean of the enlarged group of apples is decreased by 1. How many apples were in the original group?</label><br>
+            <input class="input-style" type = "text" id="a5" required> <br><br>
+
+            <button type="submit" class="btn">Submit</button>
+
+            <script>
+                function checkForm(){
+                var a1 = document.getElementById("a1").value;
+                var a2 = document.getElementById("a2").value;
+                var a3 = document.getElementById("a3").value;
+                var a4 = document.getElementById("a4").value;
+                var a5 = document.getElementById("a5").value;
+
+                if (a1 === "21" && a2 === "43" && a3 === "10" && a4 === "kickball" && a5 === "4"){
+                    document.getElementById("form").style.zIndex = "-1"
+                    document.getElementById("container").style.zIndex = "1"
+                    return false;
+                }
+                else{
+                    alert("Incorrect Answer(s)");   
+                    return false;
+                }
+            }
+            </script>    
+        </form>
+        </div>
+    </div>
+</body>
+</html>
