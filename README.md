@@ -10,3 +10,5 @@ Answers to questions for the forgot password in order: 21 43 10 kickball 4
 Used simple client side verification with JS for the login, password, and answers to questions.
 
 Myron Sopher Website Link: https://esf3wu.github.io/
+
+Loginsys.c: just practice with pointers and dynamic memory allocation
